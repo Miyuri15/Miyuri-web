@@ -118,7 +118,7 @@ body[data-theme='light'] .header.scrolled{
 
 .hero{
   display:grid;
-  grid-template-columns:1.5fr 1fr;
+  grid-template-columns:1fr; /* stack sections one after another by default */
   gap:40px;
   align-items:flex-start;
 }
@@ -273,9 +273,24 @@ body[data-theme='light'] .header.scrolled{
 
 .projects{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  grid-template-columns:repeat(3,1fr); /* 3 projects per row on desktop */
   gap:20px;
   margin-top:24px;
+}
+
+/* About section two-column layout */
+.about-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+  align-items:start;
+}
+
+.video-card video{
+  width:100%;
+  height:auto;
+  border-radius:12px;
+  display:block;
 }
 
 .muted{
@@ -401,7 +416,7 @@ h3{
   }
 
   .projects{
-    grid-template-columns:1fr;
+    grid-template-columns:repeat(2,1fr);
   }
 
   .nav{

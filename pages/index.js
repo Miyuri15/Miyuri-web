@@ -106,34 +106,34 @@ export default function Home(){
             </div>
 
             <Experience />
-            <Skills />
-            <Certifications />
-          </div>
+              <Skills />
+              <Certifications />
 
-          <div className="hero-right">
-            <div className="card" id="contact">
-              <h3>Contact Me</h3>
-              <p className="muted" style={{marginTop:6}}>Send a message and I'll get back to you.</p>
+              <div style={{marginTop:18}}>
+                <div className="card" id="contact">
+                  <h3>Contact Me</h3>
+                  <p className="muted" style={{marginTop:6}}>Send a message and I'll get back to you.</p>
 
-              <form onSubmit={submit} style={{marginTop:12}}>
-                <div className="form-row">
-                  <input className="input" placeholder="Your name" value={form.name} onChange={e=>setForm({...form,name:e.target.value})} />
-                  <input className="input" placeholder="Your email" value={form.email} onChange={e=>setForm({...form,email:e.target.value})} />
+                  <form onSubmit={submit} style={{marginTop:12}}>
+                    <div className="form-row">
+                      <input className="input" placeholder="Your name" value={form.name} onChange={e=>setForm({...form,name:e.target.value})} />
+                      <input className="input" placeholder="Your email" value={form.email} onChange={e=>setForm({...form,email:e.target.value})} />
+                    </div>
+                    <div style={{marginTop:12}}>
+                      <textarea placeholder="Message" value={form.message} onChange={e=>setForm({...form,message:e.target.value})}></textarea>
+                    </div>
+                    <div style={{marginTop:12,display:'flex',gap:8,justifyContent:'flex-end'}}>
+                      <button className="btn" type="submit">Send</button>
+                    </div>
+                    <div style={{marginTop:8}} className="muted">
+                      {status === 'sending' && 'Sending...'}
+                      {status === 'sent' && 'Message sent — thank you!'}
+                      {status === 'error' && 'Failed to send. Check server logs.'}
+                    </div>
+                  </form>
                 </div>
-                <div style={{marginTop:12}}>
-                  <textarea placeholder="Message" value={form.message} onChange={e=>setForm({...form,message:e.target.value})}></textarea>
-                </div>
-                <div style={{marginTop:12,display:'flex',gap:8,justifyContent:'flex-end'}}>
-                  <button className="btn" type="submit">Send</button>
-                </div>
-                <div style={{marginTop:8}} className="muted">
-                  {status === 'sending' && 'Sending...'}
-                  {status === 'sent' && 'Message sent — thank you!'}
-                  {status === 'error' && 'Failed to send. Check server logs.'}
-                </div>
-              </form>
+              </div>
             </div>
-          </div>
         </section>
 
         <Footer />
