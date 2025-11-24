@@ -12,7 +12,11 @@ const sampleProjects = [
   {
     id: 1,
     title: 'SinLearn - AI Educational Assistant',
-    image: '/sample.svg',
+    media: [
+      { type: 'video', src: '/projects/sinlearn-demo.mp4', poster: '/projects/sinlearn-poster.png' },
+      { type: 'image', src: '/projects/sinlearn-1.png' },
+      { type: 'image', src: '/projects/sinlearn-2.png' }
+    ],
     description: 'AI platform for Sinhala handwritten text processing with OCR pipelines, embeddings, RAG retrieval, and semantic comparison. Features adaptive summaries, Q&A generation, and answer evaluation.',
     tech: ['Flutter', 'Firebase', 'Python', 'FastAPI', 'OCR', 'RAG'],
     link: null,
@@ -21,7 +25,10 @@ const sampleProjects = [
   {
     id: 2,
     title: 'EV Charging Enterprise Application',
-    image: '/sample.svg',
+    media: [
+      { type: 'image', src: '/projects/ev-charging-1.png' },
+      { type: 'image', src: '/projects/ev-charging-2.png' }
+    ],
     description: 'Multi-role EV charging system with booking workflows, station monitoring, and admin dashboards. Engineered REST APIs, authentication, and real-time operations for seamless management.',
     tech: ['React', '.NET', 'MongoDB', 'Java', 'SQLite'],
     link: 'https://github.com/Miyuri15/EV-Charging-System',
@@ -30,7 +37,12 @@ const sampleProjects = [
   {
     id: 3,
     title: 'FlavorFleet - Food Ordering',
-    image: '/sample.svg',
+    media: [
+      { type: 'image', src: '/project-img/f1.jpeg' },
+      { type: 'image', src: '/project-img/f2.jpeg' },
+      { type: 'image', src: '/project-img/f3.jpeg' },
+      { type: 'image', src: '/project-img/f4.jpeg' }
+    ],
     description: 'Microservices-based ordering platform with separate services for users, restaurants, and delivery agents. Applied secure authentication, containerized services, and payment gateway integration.',
     tech: ['MERN', 'Microservices', 'Docker'],
     link: 'https://github.com/Miyuri15/FlavorFleet',
@@ -39,7 +51,9 @@ const sampleProjects = [
   {
     id: 4,
     title: 'FinTrack - Finance Tracker',
-    image: '/sample.svg',
+    media: [
+      { type: 'image', src: '/projects/fintrack-1.png' }
+    ],
     description: 'Budgeting and expense tracking web app with data visualization and secure CRUD operations. Developed unit and integration tests using Jest to ensure backend reliability.',
     tech: ['MERN', 'Jest'],
     link: 'https://github.com/Miyuri15/FinTrack',
@@ -48,7 +62,9 @@ const sampleProjects = [
   {
     id: 5,
     title: 'Peacemind - Therapy Booking',
-    image: '/sample.svg',
+    media: [
+      { type: 'image', src: '/projects/peacemind-1.png' }
+    ],
     description: 'Appointment and session management platform for therapists, patients, and admins. Created secure scheduling workflows and optimized session allocation logic.',
     tech: ['MERN', 'MongoDB'],
     link: 'https://github.com/Miyuri15/Peacemind',
