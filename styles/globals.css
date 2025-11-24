@@ -312,6 +312,15 @@ body[data-theme='light'] .header.scrolled {
   align-items: start;
 }
 
+/* When About is placed inside a single card, use this inner grid */
+.about-inner {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 2rem;
+  margin-top: 0;
+  align-items: start;
+}
+
 .video-card {
   position: relative;
   overflow: hidden;
@@ -635,6 +644,28 @@ h3 {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 920px) {
+  .about-inner {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
   }
 }
 
