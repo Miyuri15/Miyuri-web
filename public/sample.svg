@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#7c3aed" />
+      <stop offset="1" stop-color="#06b6d4" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="#071021"/>
+  <g fill="url(#g)">
+    <rect x="60" y="60" width="680" height="380" rx="12" opacity="0.12"/>
+    <circle cx="200" cy="200" r="80" opacity="0.15"/>
+  </g>
+  <text x="50%" y="48%" text-anchor="middle" fill="#9fb8d9" font-size="36" font-family="sans-serif">Sample Project Image</text>
+  <text x="50%" y="62%" text-anchor="middle" fill="#6b7280" font-size="14" font-family="sans-serif">Replace this file in `public/` with your project image</text>
+</svg>
