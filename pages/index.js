@@ -5,13 +5,55 @@ import Footer from '../components/Footer'
 import About from '../components/About'
 import Experience from '../components/Experience'
 import Skills from '../components/Skills'
-// Testimonials removed per user request
+import Certifications from '../components/Certifications'
 import {useState} from 'react'
 
 const sampleProjects = [
-  { id:1, title:'Sample Project One', image:'/sample.svg', description:'A short description of project one. Replace this with your text.' },
-  { id:2, title:'Sample Project Two', image:'/sample.svg', description:'A short description of project two. Replace this with your text.' },
-  { id:3, title:'Sample Project Three', image:'/sample.svg', description:'A short description of project three. Replace this with your text.' }
+  {
+    id:1,
+    title:'SinLearn - AI Educational Assistant',
+    image:'/sample.svg',
+    description:'AI platform for Sinhala handwritten text processing with OCR pipelines, embeddings, RAG retrieval, and semantic comparison. Features adaptive summaries, Q&A generation, and answer evaluation.',
+    tech: ['Flutter', 'Firebase', 'Python', 'FastAPI', 'OCR', 'RAG'],
+    link: null,
+    status: 'Ongoing Research'
+  },
+  {
+    id:2,
+    title:'EV Charging Enterprise Application',
+    image:'/sample.svg',
+    description:'Multi-role EV charging system with booking workflows, station monitoring, and admin dashboards. Engineered REST APIs, authentication, and real-time operations for seamless management.',
+    tech: ['React', '.NET', 'MongoDB', 'Java', 'SQLite'],
+    link: 'https://github.com/Miyuri15/EV-Charging-System',
+    status: 'Sep 2025'
+  },
+  {
+    id:3,
+    title:'FlavorFleet - Food Ordering',
+    image:'/sample.svg',
+    description:'Microservices-based ordering platform with separate services for users, restaurants, and delivery agents. Applied secure authentication, containerized services, and payment gateway integration.',
+    tech: ['MERN', 'Microservices', 'Docker'],
+    link: 'https://github.com/Miyuri15/FlavorFleet',
+    status: 'April 2025'
+  },
+  {
+    id:4,
+    title:'FinTrack - Finance Tracker',
+    image:'/sample.svg',
+    description:'Budgeting and expense tracking web app with data visualization and secure CRUD operations. Developed unit and integration tests using Jest to ensure backend reliability.',
+    tech: ['MERN', 'Jest'],
+    link: 'https://github.com/Miyuri15/FinTrack',
+    status: 'Feb 2025'
+  },
+  {
+    id:5,
+    title:'Peacemind - Therapy Booking',
+    image:'/sample.svg',
+    description:'Appointment and session management platform for therapists, patients, and admins. Created secure scheduling workflows and optimized session allocation logic.',
+    tech: ['MERN', 'MongoDB'],
+    link: 'https://github.com/Miyuri15/Peacemind',
+    status: 'Sep 2024'
+  }
 ]
 
 export default function Home(){
@@ -34,8 +76,9 @@ export default function Home(){
   return (
     <>
       <Head>
-        <title>Miyuri — Portfolio</title>
-        <meta name="description" content="Personal portfolio" />
+        <title>Miyuri Lokuhewage — Full Stack Developer</title>
+        <meta name="description" content="Full Stack Developer specializing in React, Next.js, Node.js, .NET, and AI-powered solutions. Building scalable web applications with modern technologies." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
       <main className="container">
@@ -43,8 +86,15 @@ export default function Home(){
 
         <section className="hero">
           <div className="hero-left">
-            <h1 style={{margin:0}}>Hi, I’m Miyuri — a Developer</h1>
-            <p className="muted" style={{marginTop:8}}>I build delightful web experiences. Replace this text with your summary.</p>
+            <h1 style={{margin:0}} className="hero-title">Hi, I'm Miyuri Lokuhewage</h1>
+            <p className="hero-subtitle" style={{marginTop:8}}>Full Stack Developer | Software Engineer</p>
+            <p className="muted" style={{marginTop:12,fontSize:16,lineHeight:1.6}}>Crafting scalable web applications with modern technologies. Specialized in React, Next.js, Node.js, .NET, and AI-powered solutions.</p>
+
+            <div style={{display:'flex',gap:12,marginTop:16,flexWrap:'wrap'}}>
+              <a href="https://github.com/Miyuri15" target="_blank" rel="noopener noreferrer" className="social-link">GitHub</a>
+              <a href="https://linkedin.com/in/miyurilokuhewage" target="_blank" rel="noopener noreferrer" className="social-link">LinkedIn</a>
+              <a href="mailto:miyurilokuhewage15@gmail.com" className="social-link">Email</a>
+            </div>
 
             <About />
 
@@ -57,12 +107,13 @@ export default function Home(){
 
             <Experience />
             <Skills />
+            <Certifications />
           </div>
 
           <div className="hero-right">
             <div className="card" id="contact">
               <h3>Contact Me</h3>
-              <p className="muted" style={{marginTop:6}}>Send a message and I’ll get back to you.</p>
+              <p className="muted" style={{marginTop:6}}>Send a message and I'll get back to you.</p>
 
               <form onSubmit={submit} style={{marginTop:12}}>
                 <div className="form-row">

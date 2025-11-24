@@ -1,7 +1,17 @@
 export default function Experience(){
   const items = [
-    {role:'Frontend Developer', company:'Acme Co', period:'2023 — Present', desc:'Built interactive UI components and performance optimizations.'},
-    {role:'Web Developer', company:'Startup X', period:'2020 — 2023', desc:'Worked on full-stack features and integrations.'}
+    {
+      role:'Junior Full Stack Developer',
+      company:'Codezela Technologies (Pvt) Ltd',
+      period:'May 2025 — Present',
+      desc:'Built and maintained full stack applications using Next.js, Express.js, MongoDB, and .NET in Agile Scrum teams. Implemented REST APIs, enhanced backend logic, and created reusable UI components. Developed authentication with JWT and OAuth2, applying OWASP-aligned secure coding practices.'
+    },
+    {
+      role:'Intern Full Stack Developer',
+      company:'Codezela Technologies (Pvt) Ltd',
+      period:'Sep 2024 — May 2025',
+      desc:'Contributed to frontend and backend features using Next.js, Express.js, and Supabase. Designed RESTful endpoints, integrated databases, and optimized data handling. Customized WordPress sites and supported UI responsiveness fixes across devices.'
+    }
   ]
   return (
     <section id="experience" style={{marginTop:20}}>
