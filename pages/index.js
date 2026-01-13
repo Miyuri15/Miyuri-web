@@ -170,7 +170,7 @@ export default function Home() {
 
       <Header />
 
-      <main className="container">
+      <main className="container" style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
         <section className="hero">
           <div className="hero-content">
             <h1 className="hero-title">Hi, I'm Miyuri Lokuhewage</h1>
