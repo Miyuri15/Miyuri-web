@@ -1,9 +1,15 @@
 export default function Experience() {
   const items = [
     {
+      role: 'Software Engineer',
+      company: 'Detz Global (Pvt) Ltd',
+      period: 'August 2025 — Present',
+      desc: 'Develop enterprise-level web, mobile, and desktop applications. \n Build web apps with React and mobile apps with Flutter.\n Manage data, backend services, and deployments using Firebase, IndexedDB, and VPS. \n Mentor interns and support project coordination and delivery.'
+    },
+    {
       role: 'Junior Full Stack Developer',
       company: 'Codezela Technologies (Pvt) Ltd',
-      period: 'May 2025 — Present',
+      period: 'May 2025 — Dec 2025',
       desc: 'Built and maintained full stack applications using Next.js, Express.js, MongoDB, and .NET in Agile Scrum teams. Implemented REST APIs, enhanced backend logic, and created reusable UI components. Developed authentication with JWT and OAuth2, applying OWASP-aligned secure coding practices.'
     },
     {

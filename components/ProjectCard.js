@@ -90,13 +90,13 @@ export default function ProjectCard({ project }) {
         <div style={{ display: 'flex', gap: '0.75rem', marginTop: '1rem', alignItems: 'center' }}>
           {media.length > 0 && (
             <button className="btn" onClick={() => openAt(0)} type="button">
-              ▶ Preview Gallery
+            Preview Gallery
             </button>
           )}
 
           {project.link && (
             <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
-              View Project →
+              View Project
             </a>
           )}
         </div>

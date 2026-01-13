@@ -13,21 +13,73 @@ const sampleProjects = [
     id: 1,
     title: 'SinLearn - AI Educational Assistant',
     media: [
-      { type: 'video', src: '/projects/sinlearn-demo.mp4', poster: '/projects/sinlearn-poster.png' },
-      { type: 'image', src: '/projects/sinlearn-1.png' },
-      { type: 'image', src: '/projects/sinlearn-2.png' }
+      // { type: 'video', src: '/projects/sinlearn-demo.mp4', poster: '/projects/sinlearn-poster.png' },
+      // { type: 'image', src: '/project-img/sinlearn-img/s1.jpeg' },
+      { type: 'image', src: '/project-img/sinlearn-img/s2.jpeg' },
+      { type: 'image', src: '/project-img/sinlearn-img/s3.jpeg' },
+      { type: 'image', src: '/project-img/sinlearn-img/s4.jpeg' },
+      { type: 'image', src: '/project-img/sinlearn-img/s5.jpeg' },
+      { type: 'image', src: '/project-img/sinlearn-img/s6.jpeg' },
+      { type: 'image', src: '/project-img/sinlearn-img/s7.jpeg' },
+      { type: 'image', src: '/project-img/sinlearn-img/s8.jpeg' },
+
     ],
     description: 'AI platform for Sinhala handwritten text processing with OCR pipelines, embeddings, RAG retrieval, and semantic comparison. Features adaptive summaries, Q&A generation, and answer evaluation.',
     tech: ['Flutter', 'Firebase', 'Python', 'FastAPI', 'OCR', 'RAG'],
     link: null,
     status: 'Ongoing Research'
   },
-  {
+    {
     id: 2,
+    title: 'AI Resume Builder',
+    media: [
+      { type: 'image', src: '/projects/peacemind-1.png' }
+    ],
+    description: 'AI-powered resume builder with customizable templates, real-time feedback, and job matching features.',
+    tech: ['NextJs', 'Firebase', 'OpenAI'],
+    link: 'https://github.com/Miyuri15/AI_Resume_Builder.git',
+    status: 'Dec 2025'
+  },
+  {
+    id: 3,
     title: 'EV Charging Enterprise Application',
     media: [
-      { type: 'image', src: '/projects/ev-charging-1.png' },
-      { type: 'image', src: '/projects/ev-charging-2.png' }
+      { type: 'image', src: '/project-img/ev-img/ev1.jpeg' },
+      { type: 'image', src: '/project-img/ev-img/ev2.jpeg' },
+      { type: 'image', src: '/project-img/ev-img/ev3.jpeg' },
+      { type: 'image', src: '/project-img/ev-img/ev4.jpeg' },
+      { type: 'image', src: '/project-img/ev-img/ev5.jpeg' },
+      { type: 'image', src: '/project-img/ev-img/ev6.jpeg' },
+      { type: 'image', src: '/project-img/ev-img/ev7.jpeg' },
+      { type: 'image', src: '/project-img/ev-img/ev8.jpeg' },
+      { type: 'image', src: '/project-img/ev-img/ev9.jpeg' },
+      { type: 'image', src: '/project-img/ev-img/ev10.jpeg' },
+      { type: 'image', src: '/project-img/ev-img/ev11.jpeg' },
+      { type: 'image', src: '/project-img/ev-img/ev12.jpeg' },
+      { type: 'image', src: '/project-img/ev-img/ev13.jpeg' },
+      { type: 'image', src: '/project-img/ev-img/ev14.jpeg' },
+      { type: 'image', src: '/project-img/ev-img/ev15.jpeg' },
+      { type: 'image', src: '/project-img/ev-img/ev16.jpeg' },
+      { type: 'image', src: '/project-img/ev-img/ev17.jpeg' },
+      { type: 'image', src: '/project-img/ev-img/ev18.jpeg' },
+      { type: 'image', src: '/project-img/ev-img/ev19.jpeg' },
+      { type: 'image', src: '/project-img/ev-img/ev20.jpeg' },
+      { type: 'image', src: '/project-img/ev-img/ev21.jpeg' },
+      { type: 'image', src: '/project-img/ev-img/ev22.jpeg' },
+      { type: 'image', src: '/project-img/ev-img/ev23.jpeg' },
+      { type: 'image', src: '/project-img/ev-img/ev24.jpeg' },
+      { type: 'image', src: '/project-img/ev-img/ev25.jpeg' },
+      { type: 'image', src: '/project-img/ev-img/ev26.jpeg' },
+      { type: 'image', src: '/project-img/ev-img/ev27.jpeg' },
+      { type: 'image', src: '/project-img/ev-img/ev28.jpeg' },
+      { type: 'image', src: '/project-img/ev-img/ev29.jpeg' },
+      { type: 'image', src: '/project-img/ev-img/ev30.jpeg' },
+      { type: 'image', src: '/project-img/ev-img/ev31.jpeg' },
+      { type: 'image', src: '/project-img/ev-img/ev32.jpeg' },
+      { type: 'image', src: '/project-img/ev-img/ev33.jpeg' },
+      { type: 'image', src: '/project-img/ev-img/ev34.jpeg' },
+      { type: 'image', src: '/project-img/ev-img/ev35.jpeg' },
+      { type: 'image', src: '/project-img/ev-img/ev36.jpeg' }
     ],
     description: 'Multi-role EV charging system with booking workflows, station monitoring, and admin dashboards. Engineered REST APIs, authentication, and real-time operations for seamless management.',
     tech: ['React', '.NET', 'MongoDB', 'Java', 'SQLite'],
@@ -35,13 +87,24 @@ const sampleProjects = [
     status: 'Sep 2025'
   },
   {
-    id: 3,
+    id: 4,
     title: 'FlavorFleet - Food Ordering',
     media: [
-      { type: 'image', src: '/project-img/f1.jpeg' },
-      { type: 'image', src: '/project-img/f2.jpeg' },
-      { type: 'image', src: '/project-img/f3.jpeg' },
-      { type: 'image', src: '/project-img/f4.jpeg' }
+      { type: 'image', src: '/project-img/flavourfleet-img/fl1.jpeg' },
+      { type: 'image', src: '/project-img/flavourfleet-img/fl2.jpeg' },
+      { type: 'image', src: '/project-img/flavourfleet-img/fl3.jpeg' },
+      { type: 'image', src: '/project-img/flavourfleet-img/fl4.jpeg' },
+      { type: 'image', src: '/project-img/flavourfleet-img/fl5.jpeg' },
+      { type: 'image', src: '/project-img/flavourfleet-img/fl6.jpeg' },
+      { type: 'image', src: '/project-img/flavourfleet-img/fl7.jpeg' },
+      { type: 'image', src: '/project-img/flavourfleet-img/fl8.jpeg' },
+      { type: 'image', src: '/project-img/flavourfleet-img/fl9.jpeg' },
+      { type: 'image', src: '/project-img/flavourfleet-img/fl10.jpeg' },
+      { type: 'image', src: '/project-img/flavourfleet-img/fl11.jpeg' },
+      { type: 'image', src: '/project-img/flavourfleet-img/fl12.jpeg' },
+      { type: 'image', src: '/project-img/flavourfleet-img/fl13.jpeg' },
+      { type: 'image', src: '/project-img/flavourfleet-img/fl14.jpeg' },
+
     ],
     description: 'Microservices-based ordering platform with separate services for users, restaurants, and delivery agents. Applied secure authentication, containerized services, and payment gateway integration.',
     tech: ['MERN', 'Microservices', 'Docker'],
@@ -49,7 +112,7 @@ const sampleProjects = [
     status: 'April 2025'
   },
   {
-    id: 4,
+    id: 5,
     title: 'FinTrack - Finance Tracker',
     media: [
       { type: 'image', src: '/projects/fintrack-1.png' }
@@ -60,16 +123,20 @@ const sampleProjects = [
     status: 'Feb 2025'
   },
   {
-    id: 5,
-    title: 'Peacemind - Therapy Booking',
+    id: 6,
+    title: 'Skills Careers - Job Portal',
     media: [
-      { type: 'image', src: '/projects/peacemind-1.png' }
+      { type: 'image', src: '/project-img/f1.jpeg' },
+      { type: 'image', src: '/project-img/f2.jpeg' },
+      { type: 'image', src: '/project-img/f3.jpeg' },
+      { type: 'image', src: '/project-img/f4.jpeg' }
     ],
-    description: 'Appointment and session management platform for therapists, patients, and admins. Created secure scheduling workflows and optimized session allocation logic.',
-    tech: ['MERN', 'MongoDB'],
-    link: 'https://github.com/Miyuri15/Peacemind',
-    status: 'Sep 2024'
+    description: 'Job portal with AI-driven resume analysis, job recommendations, and application tracking. Implemented RESTful APIs, JWT authentication, and dynamic front-end components for enhanced user experience.',
+    tech: ['NextJs', 'MongoDB'],
+    link: 'https://github.com/Miyuri15/skillscareers.git',
+    status: 'Dec 2024'
   }
+
 ]
 
 export default function Home() {
