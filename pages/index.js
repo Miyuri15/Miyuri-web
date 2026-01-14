@@ -31,14 +31,14 @@ const sampleProjects = [
   },
     {
     id: 2,
-    title: 'AI Resume Builder',
+    title: 'Multilingual Language Services Website',
     media: [
-      { type: 'image', src: '/projects/peacemind-1.png' }
+      { type: 'video', src: '/project-video/akuruSv.mp4' }
     ],
-    description: 'AI-powered resume builder with customizable templates, real-time feedback, and job matching features.',
-    tech: ['NextJs', 'Firebase', 'OpenAI'],
-    link: 'https://github.com/Miyuri15/AI_Resume_Builder.git',
-    status: 'Dec 2025'
+    description: 'Built a responsive multilingual services website using WordPress and Elementor, developed from scratch without pre-made themes. The site presents translation, scriptwriting, subtitling, and transcription services with a clean UI and mobile-friendly layout.',
+    tech: ['Wordpress', 'Elementor', 'Dynamic Content'],
+    link: '',
+    status: 'Nov 2025'
   },
   {
     id: 3,
@@ -83,7 +83,7 @@ const sampleProjects = [
     ],
     description: 'Multi-role EV charging system with booking workflows, station monitoring, and admin dashboards. Engineered REST APIs, authentication, and real-time operations for seamless management.',
     tech: ['React', '.NET', 'MongoDB', 'Java', 'SQLite'],
-    link: 'https://github.com/Miyuri15/EV-Charging-System',
+    link: 'https://github.com/Miyuri15/EV-Charging-System.git',
     status: 'Sep 2025'
   },
   {
@@ -111,18 +111,7 @@ const sampleProjects = [
     link: 'https://github.com/Miyuri15/FlavorFleet',
     status: 'April 2025'
   },
-  {
-    id: 5,
-    title: 'FinTrack - Finance Tracker',
-    media: [
-      { type: 'image', src: '/projects/fintrack-1.png' }
-    ],
-    description: 'Budgeting and expense tracking web app with data visualization and secure CRUD operations. Developed unit and integration tests using Jest to ensure backend reliability.',
-    tech: ['MERN', 'Jest'],
-    link: 'https://github.com/Miyuri15/FinTrack',
-    status: 'Feb 2025'
-  },
-  {
+    {
     id: 6,
     title: 'Skills Careers - Job Portal',
     media: [
@@ -135,7 +124,42 @@ const sampleProjects = [
     tech: ['NextJs', 'MongoDB'],
     link: 'https://github.com/Miyuri15/skillscareers.git',
     status: 'Dec 2024'
+  },
+  {
+    id: 5,
+    title: 'SGMS - Smart Garbage Management System',
+    media: [
+            { type: 'image', src: '/project-img/garbageapp-img/g1.jpeg' },
+            { type: 'image', src: '/project-img/garbageapp-img/g2.jpeg' },
+            { type: 'image', src: '/project-img/garbageapp-img/g3.jpeg' },
+            { type: 'image', src: '/project-img/garbageapp-img/g4.jpeg' },
+            { type: 'image', src: '/project-img/garbageapp-img/g5.jpeg' },
+            { type: 'image', src: '/project-img/garbageapp-img/g6.jpeg' },
+            { type: 'image', src: '/project-img/garbageapp-img/g7.jpeg' },
+            { type: 'image', src: '/project-img/garbageapp-img/g8.jpeg' },
+            { type: 'image', src: '/project-img/garbageapp-img/g9.jpeg' },
+            { type: 'image', src: '/project-img/garbageapp-img/g10.jpeg' },
+            { type: 'image', src: '/project-img/garbageapp-img/g11.jpeg' },
+            { type: 'image', src: '/project-img/garbageapp-img/g12.jpeg' },
+            { type: 'image', src: '/project-img/garbageapp-img/g13.jpeg' },
+            { type: 'image', src: '/project-img/garbageapp-img/g14.jpeg' },
+            { type: 'image', src: '/project-img/garbageapp-img/g15.jpeg' },
+            { type: 'image', src: '/project-img/garbageapp-img/g16.jpeg' },
+            { type: 'image', src: '/project-img/garbageapp-img/g17.jpeg' },
+            { type: 'image', src: '/project-img/garbageapp-img/g18.jpeg' },
+            { type: 'image', src: '/project-img/garbageapp-img/g19.jpeg' },
+            { type: 'image', src: '/project-img/garbageapp-img/g20.jpeg' },
+            { type: 'image', src: '/project-img/garbageapp-img/g21.jpeg' },
+            { type: 'image', src: '/project-img/garbageapp-img/g22.jpeg' },
+            { type: 'image', src: '/project-img/garbageapp-img/g23.jpeg' },
+            { type: 'image', src: '/project-img/garbageapp-img/g24.jpeg' },
+    ],
+    description: 'Smart garbage management system with real-time bin monitoring, route optimization, and admin dashboards. Developed RESTful APIs, authentication, and data visualization for efficient waste management.',
+    tech: ['MERN', 'Jest' , 'OWASP','Selenium'],
+    link: 'https://github.com/Miyuri15/Garbage_App_Secured.git',
+    status: 'Oct 2024'
   }
+
 
 ]
 
