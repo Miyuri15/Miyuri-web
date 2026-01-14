@@ -1,3 +1,5 @@
+// pages/index.js
+
 import Head from 'next/head'
 import Header from '../components/Header'
 import ProjectCard from '../components/ProjectCard'
@@ -7,6 +9,7 @@ import Experience from '../components/Experience'
 import Skills from '../components/Skills'
 import Certifications from '../components/Certifications'
 import { useState } from 'react'
+import emailjs from 'emailjs-com';
 
 const sampleProjects = [
   {
@@ -22,23 +25,24 @@ const sampleProjects = [
       { type: 'image', src: '/project-img/sinlearn-img/s6.jpeg' },
       { type: 'image', src: '/project-img/sinlearn-img/s7.jpeg' },
       { type: 'image', src: '/project-img/sinlearn-img/s8.jpeg' },
-
     ],
     description: 'AI platform for Sinhala handwritten text processing with OCR pipelines, embeddings, RAG retrieval, and semantic comparison. Features adaptive summaries, Q&A generation, and answer evaluation.',
-    tech: ['Flutter', 'Firebase', 'Python', 'FastAPI', 'OCR', 'RAG'],
+    tech: ['Flutter', 'Firebase', 'Python', 'FastAPI', 'OCR', 'RAG' ,'voice recognition'],
     link: null,
-    status: 'Ongoing Research'
+    status: 'Ongoing Research',
+    categories: ['Web','Mobile', 'AI']
   },
-    {
+  {
     id: 2,
     title: 'Multilingual Language Services Website',
     media: [
       { type: 'video', src: '/project-video/akuruSv.mp4' }
     ],
     description: 'Built a responsive multilingual services website using WordPress and Elementor, developed from scratch without pre-made themes. The site presents translation, scriptwriting, subtitling, and transcription services with a clean UI and mobile-friendly layout.',
-    tech: ['Wordpress', 'Elementor', 'Dynamic Content'],
+    tech: ['Elementor', 'Dynamic Content'],
     link: '',
-    status: 'Nov 2025'
+    status: 'Nov 2025',
+    categories: ['Web', 'Wordpress']
   },
   {
     id: 3,
@@ -82,9 +86,10 @@ const sampleProjects = [
       { type: 'image', src: '/project-img/ev-img/ev36.jpeg' }
     ],
     description: 'Multi-role EV charging system with booking workflows, station monitoring, and admin dashboards. Engineered REST APIs, authentication, and real-time operations for seamless management.',
-    tech: ['React', '.NET', 'MongoDB', 'Java', 'SQLite'],
+    tech: ['React','Flutter', '.NET', 'MongoDB', 'Java', 'SQLite' ,'IIS'],
     link: 'https://github.com/Miyuri15/EV-Charging-System.git',
-    status: 'Sep 2025'
+    status: 'Sep 2025',
+    categories: ['Web', 'Mobile']
   },
   {
     id: 4,
@@ -104,14 +109,14 @@ const sampleProjects = [
       { type: 'image', src: '/project-img/flavourfleet-img/fl12.jpeg' },
       { type: 'image', src: '/project-img/flavourfleet-img/fl13.jpeg' },
       { type: 'image', src: '/project-img/flavourfleet-img/fl14.jpeg' },
-
     ],
     description: 'Microservices-based ordering platform with separate services for users, restaurants, and delivery agents. Applied secure authentication, containerized services, and payment gateway integration.',
     tech: ['MERN', 'Microservices', 'Docker'],
     link: 'https://github.com/Miyuri15/FlavorFleet',
-    status: 'April 2025'
+    status: 'April 2025',
+    categories: ['Web']
   },
-    {
+  {
     id: 6,
     title: 'Skills Careers - Job Portal',
     media: [
@@ -120,10 +125,11 @@ const sampleProjects = [
       { type: 'image', src: '/project-img/f3.jpeg' },
       { type: 'image', src: '/project-img/f4.jpeg' }
     ],
-    description: 'Job portal with AI-driven resume analysis, job recommendations, and application tracking. Implemented RESTful APIs, JWT authentication, and dynamic front-end components for enhanced user experience.',
-    tech: ['NextJs', 'MongoDB'],
+    description: 'Job portal with role-based authentication, job listings, and application tracking. Developed RESTful APIs, secure login, and user dashboards for job seekers and employers.Admin dashboard for managing users and job postings.Recruiters can post jobs, review applications, and manage listings.',
+    tech: ['NextJs', 'MongoDB', 'NodeJs', 'Role-based Auth'],
     link: 'https://github.com/Miyuri15/skillscareers.git',
-    status: 'Dec 2024'
+    status: 'Dec 2024',
+    categories: ['Web']
   },
   {
     id: 5,
@@ -154,10 +160,11 @@ const sampleProjects = [
             { type: 'image', src: '/project-img/garbageapp-img/g23.jpeg' },
             { type: 'image', src: '/project-img/garbageapp-img/g24.jpeg' },
     ],
-    description: 'Smart garbage management system with real-time bin monitoring, route optimization, and admin dashboards. Developed RESTful APIs, authentication, and data visualization for efficient waste management.',
+    description: 'Smart garbage management system with secured web platform for residents ,admins, waste collectors and waste station recorders. Implemented secure authentication, role-based access, and automated notifications for efficient waste management and monitoring.from request and shedule garbage pickups to track waste collection and monitor bin statuses with recycling.',
     tech: ['MERN', 'Jest' , 'OWASP','Selenium'],
     link: 'https://github.com/Miyuri15/Garbage_App_Secured.git',
-    status: 'Oct 2024'
+    status: 'Oct 2024',
+    categories: ['Web']
   }
 
 
@@ -168,19 +175,28 @@ export default function Home() {
   const [status, setStatus] = useState(null)
 
   async function submit(e) {
-    e.preventDefault()
-    setStatus('sending')
+    e.preventDefault();
+    setStatus('sending');
     try {
-      const r = await fetch('/api/contact', { 
-        method: 'POST', 
-        headers: { 'Content-Type': 'application/json' }, 
-        body: JSON.stringify(form) 
-      })
-      if (!r.ok) throw new Error('Failed')
-      setStatus('sent')
-      setForm({ name: '', email: '', message: '' })
+      // Replace these with your EmailJS values
+      const SERVICE_ID = 'service_9wnt90z';
+      const TEMPLATE_ID = 'template_42sbhtb';
+      const USER_ID = 'CDgVG0n0vyl62lw_-';
+
+      const result = await emailjs.send(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        {
+          from_name: form.name,
+          from_email: form.email,
+          message: form.message,
+        },
+        USER_ID
+      );
+      setStatus('sent');
+      setForm({ name: '', email: '', message: '' });
     } catch (err) {
-      setStatus('error')
+      setStatus('error');
     }
   }
 
@@ -188,7 +204,7 @@ export default function Home() {
     <>
       <Head>
         <title>Miyuri Lokuhewage — Full Stack Developer</title>
-        <meta name="description" content="Full Stack Developer specializing in React, Next.js, Node.js, .NET, and AI-powered solutions. Building scalable web applications with modern technologies." />
+        <meta name="description" content="Full Stack Developer specializing in React, Next.js, Flutter, Node.js, .NET, and AI-powered solutions. Building scalable web and mobile applications with modern technologies." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
@@ -200,7 +216,7 @@ export default function Home() {
             <h1 className="hero-title">Hi, I'm Miyuri Lokuhewage</h1>
             <p className="hero-subtitle">Full Stack Developer | Software Engineer</p>
             <p className="hero-description">
-              Crafting scalable web applications with modern technologies. Specialized in React, Next.js, Node.js, .NET, and AI-powered solutions.
+              Crafting scalable web and mobile applications with modern technologies. Specialized in React, Next.js, Flutter, Node.js, .NET, and AI-powered solutions.
             </p>
 
             <div className="social-links">

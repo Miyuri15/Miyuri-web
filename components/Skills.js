@@ -6,7 +6,7 @@ export default function Skills() {
     },
     {
       title: '⚙️ Backend',
-      skills: ['Node.js', 'Express.js', '.NET', 'REST APIs', 'GraphQL', 'Microservices']
+      skills: ['Node.js', 'Express.js', '.NET', 'REST APIs','FastAPI', 'Microservices']
     },
     {
       title: '📱 Mobile',

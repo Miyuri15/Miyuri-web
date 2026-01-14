@@ -35,7 +35,20 @@ export default function ProjectCard({ project }) {
 
   return (
     <>
-      <div className="card project-card">
+      <div className="card project-card" style={{ border: '2px solid var(--border)' }}>
+        {/* Category Tabs - Now inside card above title */}
+        {project.categories && project.categories.length > 0 && (
+          <div className="project-categories">
+            {project.categories.map(cat => (
+              <span
+                key={cat}
+                className="project-category-tab"
+              >
+                {cat}
+              </span>
+            ))}
+          </div>
+        )}
         <div className="project-header">
           <h3 style={{ marginTop: 0, marginBottom: 0, fontSize: '1.25rem', fontWeight: '700' }}>
             {project.title}

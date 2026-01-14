@@ -4,19 +4,19 @@ export default function Experience() {
       role: 'Software Engineer',
       company: 'Detz Global (Pvt) Ltd',
       period: 'August 2025 — Present',
-      desc: 'Develop enterprise-level web, mobile, and desktop applications. \n Build web apps with React and mobile apps with Flutter.\n Manage data, backend services, and deployments using Firebase, IndexedDB, and VPS. \n Mentor interns and support project coordination and delivery.'
+      desc: 'Working as a full-stack software engineer contributing to both frontend and backend development using modern web and mobile technologies. Designed and implemented RESTful APIs, integrated databases, and optimized application performance to improve reliability and user experience. Collaborated with cross-functional teams to deliver features, refactor existing modules, and support deployments across different environments.'
     },
     {
       role: 'Junior Full Stack Developer',
       company: 'Codezela Technologies (Pvt) Ltd',
       period: 'May 2025 — Dec 2025',
-      desc: 'Built and maintained full stack applications using Next.js, Express.js, MongoDB, and .NET in Agile Scrum teams. Implemented REST APIs, enhanced backend logic, and created reusable UI components. Developed authentication with JWT and OAuth2, applying OWASP-aligned secure coding practices.'
+      desc: 'Developed foundational skills in full-stack development by working on academic and personal projects involving frontend frameworks, backend services, Wordpress and databases. Focused on writing maintainable code, implementing authentication flows, and understanding end-to-end application architecture. Built practical problem-solving skills and adapted quickly to new tools and technologies.'
     },
     {
       role: 'Intern Full Stack Developer',
       company: 'Codezela Technologies (Pvt) Ltd',
       period: 'Sep 2024 — May 2025',
-      desc: 'Contributed to frontend and backend features using Next.js, Express.js, and Supabase. Designed RESTful endpoints, integrated databases, and optimized data handling. Customized WordPress sites and supported UI responsiveness fixes across devices.'
+      desc: 'Gained hands-on experience in building and improving web application features using NextJs and related technologies. Assisted in UI enhancements, backend route development, and bug fixing while following clean code and version control practices. Actively participated in team discussions, learning real-world development workflows and contributing to ongoing optimizations of the platform. Customized WordPress sites and supported UI responsiveness fixes across devices.'
     }
   ]
   

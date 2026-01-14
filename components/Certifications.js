@@ -1,9 +1,9 @@
 export default function Certifications() {
   const certs = [
     'AWS Cloud Practitioner Essentials',
-    'AI/ML Engineer – Stage 1 & 2 (SLIIT)',
+    'AI/ML Engineer – Stage 1 & 2 (SLIIT Uni)',
     'Full Stack Development (DP Education)',
-    'Diploma in IT (ESOFT)',
+    'Diploma in IT (ESOFT Metro Campus)',
     'Information Systems & Business Process (Alison)'
   ]
 
