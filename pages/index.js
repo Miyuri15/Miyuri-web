@@ -26,7 +26,7 @@ const sampleProjects = [
       { type: 'image', src: '/project-img/sinlearn-img/s7.jpeg' },
       { type: 'image', src: '/project-img/sinlearn-img/s8.jpeg' },
     ],
-    description: 'AI platform for Sinhala handwritten text processing with OCR pipelines, embeddings, RAG retrieval, and semantic comparison. Features adaptive summaries, Q&A generation, and answer evaluation.',
+    description: 'AI platform for Sinhala handwritten text processing with OCR pipelines, embeddings, RAG retrieval, and semantic comparison. Features such as adaptive summaries, Q&A generation with both text and voice inputs, and answer evaluation with feedbacks.',
     tech: ['Flutter', 'Firebase', 'Python', 'FastAPI', 'OCR', 'RAG' ,'voice recognition'],
     link: null,
     status: 'Ongoing Research',
@@ -38,7 +38,7 @@ const sampleProjects = [
     media: [
       { type: 'video', src: '/project-video/akuruSv.mp4' }
     ],
-    description: 'Built a responsive multilingual services website using WordPress and Elementor, developed from scratch without pre-made themes. The site presents translation, scriptwriting, subtitling, and transcription services with a clean UI and mobile-friendly layout.',
+    description: 'Built a responsive multilingual services website using WordPress and Elementor, developed from scratch without pre-made themes. The site presents translation, scriptwriting, subtitling, and transcription services with a clean UI and mobile friendly layout.',
     tech: ['Elementor', 'Dynamic Content'],
     link: '',
     status: 'Nov 2025',
@@ -85,7 +85,7 @@ const sampleProjects = [
       { type: 'image', src: '/project-img/ev-img/ev35.jpeg' },
       { type: 'image', src: '/project-img/ev-img/ev36.jpeg' }
     ],
-    description: 'Multi-role EV charging system with booking workflows, station monitoring, and admin dashboards. Engineered REST APIs, authentication, and real-time operations for seamless management.',
+    description: 'Multi role EV charging system with booking workflows, station monitoring, and admin dashboards. Engineered REST APIs, authentication, and real-time operations for seamless management in both web app and mobile app.',
     tech: ['React','Flutter', '.NET', 'MongoDB', 'Java', 'SQLite' ,'IIS'],
     link: 'https://github.com/Miyuri15/EV-Charging-System.git',
     status: 'Sep 2025',
@@ -110,7 +110,7 @@ const sampleProjects = [
       { type: 'image', src: '/project-img/flavourfleet-img/fl13.jpeg' },
       { type: 'image', src: '/project-img/flavourfleet-img/fl14.jpeg' },
     ],
-    description: 'Microservices-based ordering platform with separate services for users, restaurants, and delivery agents. Applied secure authentication, containerized services, and payment gateway integration.',
+    description: 'Microservices-based ordering platform with separate services for users, restaurants,payments and delivery agents. Applied secure authentication, containerized services, and payment gateway integration.',
     tech: ['MERN', 'Microservices', 'Docker'],
     link: 'https://github.com/Miyuri15/FlavorFleet',
     status: 'April 2025',
