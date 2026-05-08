@@ -5,6 +5,11 @@ export default function ProjectCard({ project }) {
   const [openIndex, setOpenIndex] = useState(null)
 
   const media = Array.isArray(project.media) ? project.media : project.media ? [project.media] : []
+  const links = Array.isArray(project.links)
+    ? project.links
+    : project.link
+      ? [{ label: 'View Project', url: project.link }]
+      : []
 
   useEffect(() => {
     function onKey(e) {
@@ -107,11 +112,11 @@ export default function ProjectCard({ project }) {
             </button>
           )}
 
-          {project.link && (
-            <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
-              View Project
+          {links.map(link => (
+            <a key={link.url} href={link.url} target="_blank" rel="noopener noreferrer" className="project-link">
+              {link.label}
             </a>
-          )}
+          ))}
         </div>
       </div>
 
