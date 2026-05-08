@@ -105,7 +105,7 @@ export default function ProjectCard({ project }) {
           </div>
         )}
 
-        <div style={{ display: 'flex', gap: '0.75rem', marginTop: '1rem', alignItems: 'center' }}>
+        <div className="project-actions">
           {media.length > 0 && (
             <button className="btn" onClick={() => openAt(0)} type="button">
             Preview Gallery
