@@ -26,7 +26,7 @@ const sampleProjects = [
       { label: 'Website', url: 'https://www.sinhalalearn.online/' },
       { label: 'System', url: 'https://web.sinhalalearn.online/' }
     ],
-    status: 'May 2025 - May 2026',
+    status: 'Research',
     categories: ['Web', 'AI', 'Research']
   },
   {
